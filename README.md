@@ -8,24 +8,23 @@ This project is a Node.js + Express server that integrates with Twilio to:
 
 ------------------------------------------------------------------------------
 
-## 📂 Project Structure
-├── README.md # Project documentation
-├── node_modules/ # Dependencies
-├── routes/ # Route handlers
-│ ├── call.js # Voice call logic
-│ ├── schedule.js # Appointment scheduling
-│ ├── sms.js # SMS sending
-│ └── verify.js # Patient verification
-├── utils/ # Utility scripts
-│ ├── addPatients.js # Script to add sample patients
-│ └── helpers.js # Helper functions  
-├── db.js # SQLite DB connection
-├── package-lock.json # Updates dependencies
-├── package.json # Project metadata & dependencies
-├── patients.db # SQLite database file
-├── server.js # Main Express server
-├── twilio.js # Voice call sending
-└──viewPatients.js # Script to view all patients
+Kingler/
+├── README.md                 # Project documentation
+├── package.json              # Project metadata & dependencies
+├── package-lock.json         # Updates dependencies
+├── patients.db               # SQLite database file
+├── server.js                 # Main Express server
+├── twilio.js                 # Voice call sending
+├── call.js                   # Voice call logic
+├── schedule.js               # Appointment scheduling
+├── sms.js                    # SMS sending
+├── verify.js                 # Patient verification
+├── viewPatients.js           # Script to view all patients
+├── utils/                    # Utility scripts
+│   ├── addPatients.js        # Script to add sample patients
+│   └── helpers.js            # Helper functions
+├── routes/                   # Route handlers
+└── node_modules/             # Dependencies (auto-generated)
 
 ------------------------------------------------------------------------------
 
@@ -114,5 +113,6 @@ logs
 # System files
 .DS_Store
 Thumbs.db
+
 
 ------------------------------------------------------------------------------
