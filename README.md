@@ -32,38 +32,41 @@ A Node.js + Express server integrating Twilio to:
 
 ------------------------------------------------------------------------------
 
-## 🚀 Setup & Installation
+# 🚀 Setup & Installation
 
-# 1. Clone this repository
+## 1. Clone this repository
 git clone https://github.com/rohit-sharma1819/Kingler.git
+
 cd  Kingler
 
-# 2. Install dependencies
+## 2. Install dependencies
 npm install
 
-# 3. Create the .env file
+## 3. Create the .env file
 TWILIO_ACCOUNT_SID=your_account_sid
+
 TWILIO_AUTH_TOKEN=your_auth_token
+
 TWILIO_PHONE_NUMBER=+1234567890
 
-# 4. Start the server
-node server.js
-# Server runs at http://localhost:3000
+## 4. Start the server
+ node server.js
+ Server runs at http://localhost:3000
 
 
 ------------------------------------------------------------------------------
 
-🧪 API Endpoints
+# API Endpoints
 
 POST /sms/verify  → Verify patient via SMS
 
-POST /resetdb    → Clear all patient data
+POST /resetdb     → Clear all patient data
 
-GET /patients    → View patients (or use node viewPatients.js)
+GET /patients     → View patients (or use node viewPatients.js)
 
 ------------------------------------------------------------------------------
 
-📊 Database Structure
+# Database Structure
 
 Patients are stored in patients.db:
 
@@ -76,7 +79,7 @@ Patients are stored in patients.db:
 
 ------------------------------------------------------------------------------
 
-🛠 Utilities
+# Utilities
 
 node addPatients.js    → Add sample patient
 
@@ -84,7 +87,7 @@ node viewPatients.js   → View patients
 
 ------------------------------------------------------------------------------
 
-⚠️ Security Notes
+# Security Notes
 
 ❌ Don't commit .env (Twilio credentials, phone numbers) to GitHub
 
@@ -93,4 +96,5 @@ node viewPatients.js   → View patients
 ✅ Use .gitignore to exclude patients.db, .env
 
 ------------------------------------------------------------------------------
+
 
