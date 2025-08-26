@@ -8,23 +8,32 @@ This project is a Node.js + Express server that integrates with Twilio to:
 
 ------------------------------------------------------------------------------
 
-Kingler/
-├── README.md                 # Project documentation
-├── package.json              # Project metadata & dependencies
-├── package-lock.json         # Updates dependencies
-├── patients.db               # SQLite database file
-├── server.js                 # Main Express server
-├── twilio.js                 # Voice call sending
-├── call.js                   # Voice call logic
-├── schedule.js               # Appointment scheduling
-├── sms.js                    # SMS sending
-├── verify.js                 # Patient verification
-├── viewPatients.js           # Script to view all patients
-├── utils/                    # Utility scripts
-│   ├── addPatients.js        # Script to add sample patients
-│   └── helpers.js            # Helper functions
-├── routes/                   # Route handlers
-└── node_modules/             # Dependencies (auto-generated)
+Project Root/
+│
+├── README.md           # Project documentation
+├── package.json        # Metadata & dependencies
+├── package-lock.json   # Locked dependencies
+├── node_modules/       # Dependencies
+├── patients.db         # SQLite database file
+├── db.js               # Database connection
+├── server.js           # Main Express server
+│
+├── routes/             # Route handlers
+│
+├── utils/              # Utility scripts
+│   ├── helpers.js
+│   ├── verify.js       # Patient verification
+│   └── ...
+│
+├── scripts/
+│   ├── addPatients.js  # Add sample patients
+│   ├── viewPatients.js # View all patients
+│   └── schedule.js     # Appointment scheduling
+│
+├── sms.js              # SMS sending
+├── twilio.js           # Voice call sending
+├── call.js             # Voice call logic
+
 
 ------------------------------------------------------------------------------
 
@@ -116,3 +125,4 @@ Thumbs.db
 
 
 ------------------------------------------------------------------------------
+
