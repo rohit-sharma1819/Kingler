@@ -35,8 +35,8 @@ A Node.js + Express server integrating Twilio to:
 ## 🚀 Setup & Installation
 
 # 1. Clone this repository
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/rohit-sharma1819/Kingler.git
+cd  Kingler
 
 # 2. Install dependencies
 npm install
@@ -93,3 +93,4 @@ node viewPatients.js   → View patients
 ✅ Use .gitignore to exclude patients.db, .env
 
 ------------------------------------------------------------------------------
+
